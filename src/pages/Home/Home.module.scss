@@ -1,0 +1,59 @@
+.wrapper {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #80808033;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.searchHistoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    &:nth-child(1) {
+      font-weight: 500;
+    }
+  }
+}
+.content {
+  min-height: 150px;
+  padding: 16px 0;
+}
+.currentWeatherCard {
+  :global {
+    .ant-card-body {
+      h4.ant-typography,
+      h1.ant-typography {
+        margin-top: 0;
+      }
+    }
+  }
+  p {
+    display: flex;
+    margin: 0 0 4px 0;
+    > span {
+      &:nth-child(1) {
+        width: 100px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.alert {
+  min-width: 500px;
+}
